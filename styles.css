@@ -1,0 +1,229 @@
+:root{
+ --background_1: #cea2ac;
+ --background_2: #efd9ce;
+ --color:#7B113A;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;  
+}
+
+
+h1,h2,h3,h4 {
+  font-family: "Rubik", sans-serif;
+  line-height: 2rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+p{
+  line-height: 2em;
+  font-size: 2em;
+}
+
+li a:hover{
+  border-bottom:2px solid #a675a1;
+  color: aliceblue;
+}
+/* section{
+ 
+    /* display: flex;
+  justify-content: center; */
+
+
+ul li {
+  display: inline-block;
+}
+
+
+/* Showcase Section  */
+
+.showcase{
+   background-image: url(remove.jpg);
+ }
+
+.services{
+  background-image: url(miss.jpg);
+ 
+}
+.showcase, .services{
+   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+   background-attachment: fixed;
+   color: var(--color);
+ 
+}
+
+/* About Us  */
+.values{
+   background-color: var(--background_1);
+}
+
+.values, .mission{
+     display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--color);
+}
+
+.mission{
+  background-color: var(--background_2);
+   
+}
+.text-container{
+   
+   border: var(--color) dashed 0.05rem;
+   padding:2em;
+}
+.values-text{
+ margin-left: 3rem;
+}
+.mission_text{
+  margin-right: 3rem;
+}
+
+
+
+.but{
+  display: block;
+  margin-top:1rem;
+}
+
+
+
+.heading{
+  /* font-weight: bold; */
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+
+
+
+/* About Us */
+
+/* Products */
+
+.Packages {
+  z-index: 10000;
+}
+.row div {
+  margin: 1rem 0 1rem;
+  color: var(--color);
+  background-size: cover;
+}
+
+/* Cards Styling */
+
+.card-1 {
+  background-image: url(blue.jpg);
+
+}
+.card-2 {
+  background-image: url(nails.jpg);
+}
+
+.card-3 {
+  background-image: url(4.png);
+}
+
+.card {
+  max-height: 100rem;
+  overflow: hidden;
+  transition: transform 500ms ease;
+  cursor: pointer;
+ 
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-tittle {
+  position: relative;
+  width: max-content;
+}
+
+.card-tittle::after {
+  content: "";
+  position: absolute;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 500ms ease;
+}
+
+.button {
+  display: inline;
+  text-decoration: none;
+  backface-visibility: visible;
+  color: salmon;
+}
+
+.button:hover {
+  color: silver;
+}
+/* End of Card Styling */
+
+/* MEDIA QUERRIES */
+
+@media (hover) {
+  .card-content {
+    transform: translateY(65%);
+    transition: transform 500ms ease;
+  }
+  .card:hover .card-content {
+    transform: translateY(0);
+  }
+  .card:hover .card-tittle::after {
+    transform: scaleX(1);
+  }
+  .card-tittle::after {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 500ms ease;
+  }
+}
+
+/* footer  */
+
+.bi-whatsapp {
+  color: #4fce5d;
+}
+
+.bi-instagram {
+  color: #fb3958;
+}
+
+@media screen and (max-width:768px){
+body{
+  overflow-x: hidden;
+}
+.navbar-toggler{
+  color: var(--color);
+}
+
+.img{
+  display: none;
+}
+
+
+}
